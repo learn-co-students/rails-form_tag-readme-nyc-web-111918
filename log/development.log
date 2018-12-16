@@ -261,3 +261,96 @@ Started GET "/posts/new" for 127.0.0.1 at 2018-12-16 17:11:53 -0500
 Processing by PostsController#new as HTML
   Rendered posts/new.erb within layouts/application (0.4ms)
 Completed 200 OK in 21ms (Views: 20.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2018-12-16 17:17:38 -0500
+Processing by PostsController#new as HTML
+  Rendered posts/new.erb within layouts/application (39.7ms)
+Completed 500 Internal Server Error in 51ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `label' for nil:NilClass):
+     7:   <hidden_field_tag :authenticity_token, form_authenticity_token %>
+     8: 
+     9:   <input type="submit" value="Submit Post"> -->
+    10:   <%= f.label :post %> <br>
+    11:   <%= f.label :description %> <br>
+    12:   <%= f.submit %>
+    13: 
+  app/views/posts/new.erb:10:in `block in _app_views_posts_new_erb___1515567448327044903_70116229418100'
+  app/views/posts/new.erb:2:in `_app_views_posts_new_erb___1515567448327044903_70116229418100'
+
+
+  Rendered /Users/flatironschool/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.4ms)
+  Rendered /Users/flatironschool/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.8ms)
+  Rendered /Users/flatironschool/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/flatironschool/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (121.5ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2018-12-16 17:19:18 -0500
+Processing by PostsController#new as HTML
+  Rendered posts/new.erb within layouts/application (5.5ms)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `label' for nil:NilClass):
+     7:   <hidden_field_tag :authenticity_token, form_authenticity_token %>
+     8: 
+     9:   <input type="submit" value="Submit Post"> -->
+    10:   <%= f.label :'post[title]'%> <br>
+    11:   <%= f.label :'post[description]' %> <br>
+    12:   <%= f.submit %>
+    13: 
+  app/views/posts/new.erb:10:in `block in _app_views_posts_new_erb___1515567448327044903_70116199466060'
+  app/views/posts/new.erb:2:in `_app_views_posts_new_erb___1515567448327044903_70116199466060'
+
+
+  Rendered /Users/flatironschool/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.2ms)
+  Rendered /Users/flatironschool/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /Users/flatironschool/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/flatironschool/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (118.4ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2018-12-16 17:22:08 -0500
+Processing by PostsController#new as HTML
+  Rendered posts/new.erb within layouts/application (5.1ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `label' for nil:NilClass):
+     7:   <hidden_field_tag :authenticity_token, form_authenticity_token %>
+     8: 
+     9:   <input type="submit" value="Submit Post"> -->
+    10:   <%= f.label :'post[title]'%> <br>
+    11:   <%= f.label :'post[description]' %> <br>
+    12:   <%= f.submit %>
+    13: 
+  app/views/posts/new.erb:10:in `block in _app_views_posts_new_erb___1515567448327044903_70116199466060'
+  app/views/posts/new.erb:2:in `_app_views_posts_new_erb___1515567448327044903_70116199466060'
+
+
+  Rendered /Users/flatironschool/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.2ms)
+  Rendered /Users/flatironschool/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.6ms)
+  Rendered /Users/flatironschool/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/flatironschool/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (108.6ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2018-12-16 17:22:14 -0500
+Processing by PostsController#new as HTML
+  Rendered posts/new.erb within layouts/application (1.0ms)
+Completed 200 OK in 53ms (Views: 52.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2018-12-16 17:25:27 -0500
+Processing by PostsController#new as HTML
+  Rendered posts/new.erb within layouts/application (1.2ms)
+Completed 200 OK in 49ms (Views: 48.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2018-12-16 17:26:31 -0500
+Processing by PostsController#new as HTML
+  Rendered posts/new.erb within layouts/application (1.2ms)
+Completed 200 OK in 22ms (Views: 21.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2018-12-16 17:26:43 -0500
+Processing by PostsController#new as HTML
+  Rendered posts/new.erb within layouts/application (0.9ms)
+Completed 200 OK in 20ms (Views: 19.3ms | ActiveRecord: 0.0ms)
